@@ -1,0 +1,35 @@
+{
+    "name": "easygco/easygco-payments-res-gateway",
+    "description": "EasyGCO Payments Gateway for the Real Easy Store",
+    "keywords": [
+        "easygco",
+        "easygco payments",
+        "esg",
+        "easy group",
+        "real easy store",
+        "easygco gateway module",
+        "easygco gateway",
+        "easygco module",
+        "easygco payments gateway module",
+        "easygco payments gateway",
+        "easygco payments module",
+        "payment gateway module",
+        "payments gateway module",
+        "res",
+        "real easy store",
+        "joudisoft real easy store"
+    ],
+    "homepage": "https://github.com/EasyGCO/EasyGCO-Payments-RES-Gateway",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "EasyGCO",
+            "email": "github@easygco.com",
+            "homepage": "https://easygco.com/"
+        }
+    ],
+    "support": {
+        "email": "github@easygco.com",
+        "documentation": "https://docs.easygco.com/"
+    }
+}
