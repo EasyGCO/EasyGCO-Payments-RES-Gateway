@@ -47,7 +47,7 @@ function gateway_easygco_payments_payment_hook($payment,$user) {
 	$apiPath = 'token/generate';
 
 	$inputData = [
-		'transaction_id' 	=> $invoiceData['invoice_id'],
+		'transaction_id' 	=> $invoiceData['invoice_uid'],
 		'description' 		=> 'Payment for invoice #' . $invoiceData['invoice_id'],
 		'code' 				=> $paymentGateway['options']['currency_code'],
 		'type' 				=> strtolower($paymentGateway['options']['currency_type']),
