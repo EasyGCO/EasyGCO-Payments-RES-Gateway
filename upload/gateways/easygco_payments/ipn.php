@@ -28,10 +28,10 @@ if(empty($apiResponseData['externalid'])) {
 }
 
 $paymentUID = $apiResponseData['payment_uid'];
-$invoiceID = intval($apiResponseData['externalid']);
+$invoiceUID = intval($apiResponseData['externalid']);
 
 
-$invoiceData = $db->where('invoice_id',$invoiceID)->getOne('invoices');
+$invoiceData = $db->where('invoice_uid',$invoiceUID)->getOne('invoices');
 if(empty($invoiceData)) {
     http_response_code(200);
     exit('Success: IPN Received, No action taken, invoice is not exist');
