@@ -28,7 +28,7 @@ if(empty($apiResponseData['externalid'])) {
 }
 
 $paymentUID = $apiResponseData['payment_uid'];
-$invoiceUID = intval($apiResponseData['externalid']);
+$invoiceUID = (int) filter_var($apiResponseData['externalid'], FILTER_SANITIZE_NUMBER_INT);
 
 
 $invoiceData = $db->where('invoice_uid',$invoiceUID)->getOne('invoices');
